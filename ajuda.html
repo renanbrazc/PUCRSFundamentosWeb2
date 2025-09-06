@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Ajuda - MiniMercado Bom Preço</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Central de ajuda: guia de funcionalidades, FAQ e suporte do site do MiniMercado Bom Preço.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+</head>
+<body>
+    <!-- Skip link para acessibilidade -->
+    <a href="#main" class="skip-link visually-hidden-focusable">Pular para conteúdo principal</a>
+    
+    <!-- Cabeçalho -->
+    <header role="banner">
+        <div class="container">
+            <h1>MiniMercado Bom Preço</h1>
+            
+            <!-- Navegação principal -->
+            <nav role="navigation" aria-label="Menu principal">
+                <a href="index.html">Início</a> | 
+                <a href="produtos.html">Produtos</a> | 
+                <a href="servicos.html">Serviços</a> | 
+                <a href="sobre.html">Sobre</a> | 
+                <a href="contato.html">Contato</a> | 
+                <a href="ajuda.html" aria-current="page">Ajuda</a>
+            </nav>
+            
+            <!-- Botão de acessibilidade -->
+            <div class="accessibility-controls">
+                <button type="button" id="contrastToggle" class="btn btn-outline-light btn-sm" 
+                        aria-pressed="false" title="Alterna modo alto contraste">
+                    Ativar Alto Contraste
+                </button>
+            </div>
+        </div>
+        <hr>
+    </header>
+    
+    <!-- Conteúdo principal -->
+    <main id="main" role="main">
+        <div class="container">
+            
+            <!-- Relógio e status da loja -->
+            <section class="clock-section" aria-label="Horário atual e status da loja">
+                <div class="clock-container">
+                    <div id="clock" aria-live="polite" aria-label="Horário atual">
+                        <!-- Preenchido via JavaScript -->
+                    </div>
+                    <div id="storeStatus" aria-live="polite">
+                        <!-- Status da loja preenchido via JavaScript -->
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Central de ajuda -->
+            <section class="ajuda-section" aria-label="Central de ajuda e suporte">
+                <div class="row">
+                    
+                    <!-- Conteúdo principal da ajuda -->
+                    <div class="col-lg-8">
+                        <h2>Central de Ajuda</h2>
+                        
+                        <!-- Guia de funcionalidades -->
+                        <div class="help-section mb-5">
+                            <h3 id="funcionalidades">Funcionalidades do Site</h3>
+                            <p class="lead">
+                                Este site apresenta categorias de produtos com imagem, descrição e preço, 
+                                além dos serviços com descrição e valor.
+                            </p>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="card h-100 border-primary">
+                                        <div class="card-header bg-primary text-white">
+                                            <h4 class="card-title mb-0">
+                                                <i class="fas fa-home" aria-hidden="true"></i>
+                                                Página Início
+                                            </h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Mensagem de boas-vindas</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Carrossel de produtos em destaque</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Relógio em tempo real</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Status de funcionamento</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Formulário de cadastro</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Sistema de agendamento</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="card h-100 border-success">
+                                        <div class="card-header bg-success text-white">
+                                            <h4 class="card-title mb-0">
+                                                <i class="fas fa-shopping-basket" aria-hidden="true"></i>
+                                                Página Produtos
+                                            </h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> 3 categorias organizadas</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Hortifruti (Banana, Tomate)</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Mercearia (Arroz, Feijão)</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Limpeza (Detergente, Esponja)</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Imagens, descrições e preços</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Botões interativos</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="card h-100 border-warning">
+                                        <div class="card-header bg-warning text-dark">
+                                            <h4 class="card-title mb-0">
+                                                <i class="fas fa-truck" aria-hidden="true"></i>
+                                                Página Serviços
+                                            </h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Retirada no Local (sem custo)</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Tele-entrega (R$ 7,00 — bairro)</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Informações detalhadas</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Área de cobertura</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Links para agendamento</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="card h-100 border-info">
+                                        <div class="card-header bg-info text-white">
+                                            <h4 class="card-title mb-0">
+                                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                                Página Contato
+                                            </h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Informações completas</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Formulário de contato</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Telefone e WhatsApp</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Localização e mapa</li>
+                                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> FAQ interativo</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Menu de navegação -->
+                        <div class="help-section mb-5">
+                            <h3 id="navegacao">Como Navegar no Site</h3>
+                            
+                            <div class="alert alert-info">
+                                <h4 class="alert-heading">
+                                    <i class="fas fa-compass" aria-hidden="true"></i>
+                                    Menu de Navegação
+                                </h4>
+                                <p class="mb-0">
+                                    Use o menu no topo da página para acessar: 
+                                    <strong>Início</strong>, <strong>Produtos</strong>, 
+                                    <strong>Serviços</strong>, <strong>Sobre</strong>, 
+                                    <strong>Contato</strong> e esta <strong>Ajuda</strong>.
+                                </p>
+                            </div>
+                            
+                            <div class="navigation-tips">
+                                <h4>Dicas de Navegação:</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <i class="fas fa-keyboard text-primary" aria-hidden="true"></i>
+                                                <strong>Tab:</strong> Navegar entre elementos
+                                            </li>
+                                            <li class="list-group-item">
+                                                <i class="fas fa-hand-pointer text-success" aria-hidden="true"></i>
+                                                <strong>Enter/Space:</strong> Ativar botões e links
+                                            </li>
+                                            <li class="list-group-item">
+                                                <i class="fas fa-arrows-alt text-warning" aria-hidden="true"></i>
+                                                <strong>Setas:</strong> Navegar no carrossel
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <i class="fas fa-eye text-info" aria-hidden="true"></i>
+                                                <strong>Alto Contraste:</strong> Botão no cabeçalho
+                                            </li>
+                                            <li class="list-group-item">
+                                                <i class="fas fa-mobile-alt text-secondary" aria-hidden="true"></i>
+                                                <strong>Mobile:</strong> Design responsivo
+                                            </li>
+                                            <li class="list-group-item">
+                                                <i class="fas fa-universal-access text-purple" aria-hidden="true"></i>
+                                                <strong>Acessível:</strong> Compatível com leitores de tela
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Recursos interativos -->
+                        <div class="help-section mb-5">
+                            <h3 id="recursos">Recursos Interativos</h3>
+                            
+                            <div class="accordion" id="recursosAccordion">
+                                
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="carrossel">
+                                        <button class="accordion-button" type="button" 
+                                                data-bs-toggle="collapse" data-bs-target="#collapseCarrossel" 
+                                                aria-expanded="true" aria-controls="collapseCarrossel">
+                                            <i class="fas fa-images me-2" aria-hidden="true"></i>
+                                            Carrossel de Produtos
+                                        </button>
+                                    </h4>
+                                    <div id="collapseCarrossel" class="accordion-collapse collapse show" 
+                                         aria-labelledby="carrossel" data-bs-parent="#recursosAccordion">
+                                        <div class="accordion-body">
+                                            <p><strong>Localização:</strong> Página inicial</p>
+                                            <p><strong>Funcionalidade:</strong> Mostra produtos em destaque com rotação automática a cada 4 segundos.</p>
+                                            <p><strong>Controles:</strong></p>
+                                            <ul>
+                                                <li>Botões anterior/próximo nas laterais</li>
+                                                <li>Indicadores de slide na parte inferior</li>
+                                                <li>Navegação por teclado (setas esquerda/direita)</li>
+                                                <li>Pausar/retomar com foco do teclado</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="relogio">
+                                        <button class="accordion-button collapsed" type="button" 
+                                                data-bs-toggle="collapse" data-bs-target="#collapseRelogio" 
+                                                aria-expanded="false" aria-controls="collapseRelogio">
+                                            <i class="fas fa-clock me-2" aria-hidden="true"></i>
+                                            Relógio e Status da Loja
+                                        </button>
+                                    </h4>
+                                    <div id="collapseRelogio" class="accordion-collapse collapse" 
+                                         aria-labelledby="relogio" data-bs-parent="#recursosAccordion">
+                                        <div class="accordion-body">
+                                            <p><strong>Localização:</strong> Todas as páginas</p>
+                                            <p><strong>Funcionalidade:</strong> Mostra hora atual e status de funcionamento.</p>
+                                            <p><strong>Status automático:</strong></p>
+                                            <ul>
+                                                <li>🟢 <strong>Aberto:</strong> Segunda a Sábado, 8h às 20h</li>
+                                                <li>🔴 <strong>Fechado:</strong> Fora do horário ou domingos</li>
+                                                <li>Atualização em tempo real</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="formularios">
+                                        <button class="accordion-button collapsed" type="button" 
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFormularios" 
+                                                aria-expanded="false" aria-controls="collapseFormularios">
+                                            <i class="fas fa-edit me-2" aria-hidden="true"></i>
+                                            Formulários Inteligentes
+                                        </button>
+                                    </h4>
+                                    <div id="collapseFormularios" class="accordion-collapse collapse" 
+                                         aria-labelledby="formularios" data-bs-parent="#recursosAccordion">
+                                        <div class="accordion-body">
+                                            <p><strong>Recursos implementados:</strong></p>
+                                            <ul>
+                                                <li><strong>Validação em tempo real:</strong> Feedback imediato</li>
+                                                <li><strong>Máscaras automáticas:</strong> CPF, telefone, CEP</li>
+                                                <li><strong>Campos obrigatórios:</strong> Marcados com (*)</li>
+                                                <li><strong>Validação de CPF:</strong> Algoritmo oficial</li>
+                                                <li><strong>Contador de caracteres:</strong> Em campos de texto</li>
+                                                <li><strong>Mensagens de erro:</strong> Específicas por campo</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="calendario">
+                                        <button class="accordion-button collapsed" type="button" 
+                                                data-bs-toggle="collapse" data-bs-target="#collapseCalendario" 
+                                                aria-expanded="false" aria-controls="collapseCalendario">
+                                            <i class="fas fa-calendar-alt me-2" aria-hidden="true"></i>
+                                            Calendário de Agendamento
+                                        </button>
+                                    </h4>
+                                    <div id="collapseCalendario" class="accordion-collapse collapse" 
+                                         aria-labelledby="calendario" data-bs-parent="#recursosAccordion">
+                                        <div class="accordion-body">
+                                            <p><strong>Localização:</strong> Página inicial (seção agendamento)</p>
+                                            <p><strong>Funcionalidades:</strong></p>
+                                            <ul>
+                                                <li><strong>Navegação por mês:</strong> Botões anterior/próximo</li>
+                                                <li><strong>Bloqueio automático:</strong> Datas passadas e domingos</li>
+                                                <li><strong>Seleção interativa:</strong> Clique ou teclado</li>
+                                                <li><strong>Horários dinâmicos:</strong> Carregados após seleção da data</li>
+                                                <li><strong>Acessibilidade:</strong> Navegação por teclado completa</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <!-- Acessibilidade -->
+                        <div class="help-section mb-5">
+                            <h3 id="acessibilidade">Recursos de Acessibilidade</h3>
+                            
+                            <div class="alert alert-success">
+                                <h4 class="alert-heading">
+                                    <i class="fas fa-universal-access" aria-hidden="true"></i>
+                                    Site Totalmente Acessível
+                                </h4>
+                                <p class="mb-0">
+                                    Este site foi desenvolvido seguindo as diretrizes WCAG 2.1 
+                                    para garantir acessibilidade a todos os usuários.
+                                </p>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="accessibility-feature">
+                                        <h5>
+                                            <i class="fas fa-eye text-primary" aria-hidden="true"></i>
+                                            Para Deficientes Visuais
+                                        </h5>
+                                        <ul>
+                                            <li>Atributos alt descritivos em todas as imagens</li>
+                                            <li>Estrutura semântica com headings hierárquicos</li>
+                                            <li>ARIA labels e roles implementados</li>
+                                            <li>Compatibilidade com leitores de tela</li>
+                                            <li>Modo alto contraste ativável</li>
+                                            <li>Anúncios dinâmicos para mudanças de estado</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-3">
+                                    <div class="accessibility-feature">
+                                        <h5>
+                                            <i class="fas fa-keyboard text-success" aria-hidden="true"></i>
+                                            Navegação por Teclado
+                                        </h5>
+                                        <ul>
+                                            <li>Tab order lógico e funcional</li>
+                                            <li>Skip links para conteúdo principal</li>
+                                            <li>Indicadores visuais de foco</li>
+                                            <li>Suporte a Enter e Space</li>
+                                            <li>Navegação por setas no carrossel</li>
+                                            <li>Todos os elementos interativos acessíveis</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accessibility-controls-demo">
+                                <h5>Como Ativar o Alto Contraste:</h5>
+                                <ol>
+                                    <li>Localize o botão "Ativar Alto Contraste" no cabeçalho</li>
+                                    <li>Clique no botão ou pressione Enter quando focado</li>
+                                    <li>O modo será ativado e salvo automaticamente</li>
+                                    <li>Para desativar, clique novamente no botão</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Sidebar com links rápidos -->
+                    <div class="col-lg-4">
+                        <aside class="help-sidebar">
+                            
+                            <!-- Navegação rápida -->
+                            <div class="card mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    <h3 class="card-title mb-0">
+                                        <i class="fas fa-list" aria-hidden="true"></i>
+                                        Navegação Rápida
+                                    </h3>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                        <a href="#funcionalidades" class="list-group-item list-group-item-action">
+                                            <i class="fas fa-cog" aria-hidden="true"></i>
+                                            Funcionalidades do Site
+                                        </a>
+                                        <a href="#navegacao" class="list-group-item list-group-item-action">
+                                            <i class="fas fa-compass" aria-hidden="true"></i>
+                                            Como Navegar
+                                        </a>
+                                        <a href="#recursos" class="list-group-item list-group-item-action">
+                                            <i class="fas fa-magic" aria-hidden="true"></i>
+                                            Recursos Interativos
+                                        </a>
+                                        <a href="#acessibilidade" class="list-group-item list-group-item-action">
+                                            <i class="fas fa-universal-access" aria-hidden="true"></i>
+                                            Acessibilidade
+                                        </a>
+                                        <a href="#faq" class="list-group-item list-group-item-action">
+                                            <i class="fas fa-question-circle" aria-hidden="true"></i>
+                                            Perguntas Frequentes
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Atalhos de teclado -->
+                            <div class="card mb-4">
+                                <div class="card-header bg-success text-white">
+                                    <h3 class="card-title mb-0">
+                                        <i class="fas fa-keyboard" aria-hidden="true"></i>
+                                        Atalhos de Teclado
+                                    </h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="keyboard-shortcuts">
+                                        <div class="shortcut-item mb-2">
+                                            <kbd>Tab</kbd> - Próximo elemento
+                                        </div>
+                                        <div class="shortcut-item mb-2">
+                                            <kbd>Shift</kbd> + <kbd>Tab</kbd> - Elemento anterior
+                                        </div>
+                                        <div class="shortcut-item mb-2">
+                                            <kbd>Enter</kbd> - Ativar link/botão
+                                        </div>
+                                        <div class="shortcut-item mb-2">
+                                            <kbd>Space</kbd> - Ativar botão/checkbox
+                                        </div>
+                                        <div class="shortcut-item mb-2">
+                                            <kbd>←</kbd> <kbd>→</kbd> - Navegar carrossel
+                                        </div>
+                                        <div class="shortcut-item">
+                                            <kbd>Esc</kbd> - Fechar modais
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Suporte técnico -->
+                            <div class="card">
+                                <div class="card-header bg-warning text-dark">
+                                    <h3 class="card-title mb-0">
+                                        <i class="fas fa-life-ring" aria-hidden="true"></i>
+                                        Precisa de Ajuda?
+                                    </h3>
+                                </div>
+                                <div class="card-body">
+                                    <p class="mb-3">
+                                        Não encontrou o que procurava? Entre em contato conosco!
+                                    </p>
+                                    <div class="d-grid gap-2">
+                                        <a href="contato.html" class="btn btn-primary">
+                                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                                            Fale Conosco
+                                        </a>
+                                        <a href="tel:+551133330000" class="btn btn-success">
+                                            <i class="fas fa-phone" aria-hidden="true"></i>
+                                            (11) 3333-0000
+                                        </a>
+                                        <a href="https://wa.me/5511933330000" 
+                                           target="_blank" rel="noopener noreferrer"
+                                           class="btn btn-info">
+                                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                            WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </aside>
+                    </div>
+                    
+                </div>
+                
+                <!-- FAQ -->
+                <div class="faq-section mt-5" id="faq">
+                    <h3>Perguntas Frequentes sobre o Site</h3>
+                    
+                    <div class="accordion" id="faqAccordion">
+                        
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="faq1">
+                                <button class="accordion-button collapsed" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFaq1" 
+                                        aria-expanded="false" aria-controls="collapseFaq1">
+                                    Como faço um cadastro no site?
+                                </button>
+                            </h4>
+                            <div id="collapseFaq1" class="accordion-collapse collapse" 
+                                 aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Acesse a página inicial e role até a seção "Cadastro de Cliente". 
+                                    Preencha todos os campos obrigatórios (marcados com *) e clique em 
+                                    "Cadastrar Cliente". O sistema validará automaticamente os dados.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="faq2">
+                                <button class="accordion-button collapsed" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFaq2" 
+                                        aria-expanded="false" aria-controls="collapseFaq2">
+                                    Como agendar uma entrega ou retirada?
+                                </button>
+                            </h4>
+                            <div id="collapseFaq2" class="accordion-collapse collapse" 
+                                 aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Após fazer seu cadastro, use a seção "Agendamento de Serviço" na página inicial. 
+                                    Escolha entre retirada no local (grátis) ou tele-entrega (R$ 7,00), 
+                                    selecione uma data no calendário e escolha um horário disponível.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="faq3">
+                                <button class="accordion-button collapsed" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFaq3" 
+                                        aria-expanded="false" aria-controls="collapseFaq3">
+                                    O site funciona em dispositivos móveis?
+                                </button>
+                            </h4>
+                            <div id="collapseFaq3" class="accordion-collapse collapse" 
+                                 aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim! O site foi desenvolvido com design responsivo, funcionando 
+                                    perfeitamente em smartphones, tablets e computadores. Todos os 
+                                    recursos se adaptam automaticamente ao tamanho da tela.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="faq4">
+                                <button class="accordion-button collapsed" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFaq4" 
+                                        aria-expanded="false" aria-controls="collapseFaq4">
+                                    Como ativar o modo alto contraste?
+                                </button>
+                            </h4>
+                            <div id="collapseFaq4" class="accordion-collapse collapse" 
+                                 aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No cabeçalho de qualquer página, procure pelo botão "Ativar Alto Contraste" 
+                                    e clique nele. O modo será ativado instantaneamente e sua preferência 
+                                    será salva automaticamente para futuras visitas.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="faq5">
+                                <button class="accordion-button collapsed" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFaq5" 
+                                        aria-expanded="false" aria-controls="collapseFaq5">
+                                    O site é acessível para pessoas com deficiência?
+                                </button>
+                            </h4>
+                            <div id="collapseFaq5" class="accordion-collapse collapse" 
+                                 aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutamente! O site segue as diretrizes WCAG 2.1 e inclui: 
+                                    navegação por teclado, compatibilidade com leitores de tela, 
+                                    alto contraste, textos alternativos descritivos em imagens, 
+                                    e estrutura semântica otimizada para acessibilidade.
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Versão do sistema -->
+                <div class="system-info mt-5 p-4 bg-light rounded">
+                    <h4>Informações do Sistema</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><strong>Versão:</strong> 2.0 (Fase 2)</li>
+                                <li><strong>Última atualização:</strong> Janeiro 2025</li>
+                                <li><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript, Bootstrap 5</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><strong>Compatibilidade:</strong> Todos os navegadores modernos</li>
+                                <li><strong>Acessibilidade:</strong> WCAG 2.1 Nível AA</li>
+                                <li><strong>Responsivo:</strong> Mobile, Tablet, Desktop</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+        </div>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer role="contentinfo">
+        <div class="container">
+            <hr>
+            <p>&copy; 2025 MiniMercado Bom Preço &mdash; Todos os direitos reservados.</p>
+            <p>
+                Contato: 
+                <a href="mailto:contato@minimercadobompreco.com.br" 
+                   aria-label="Enviar e-mail para contato@minimercadobompreco.com.br">
+                    contato@minimercadobompreco.com.br
+                </a> &mdash; 
+                Tel: <a href="tel:+551133330000" aria-label="Ligar para (11) 3333-0000">(11) 3333-0000</a>
+            </p>
+            
+            <!-- Navegação do rodapé -->
+            <nav role="navigation" aria-label="Menu do rodapé">
+                <a href="index.html">Início</a> | 
+                <a href="produtos.html">Produtos</a> | 
+                <a href="servicos.html">Serviços</a> | 
+                <a href="sobre.html">Sobre</a> | 
+                <a href="contato.html">Contato</a> | 
+                <a href="ajuda.html">Ajuda</a>
+            </nav>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Font Awesome para ícones -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    
+    <!-- JavaScript customizado -->
+    <script src="assets/js/script.js"></script>
+    
+    <!-- Smooth scrolling para links internos -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling para links âncora
+            const anchorLinks = document.querySelectorAll('a[href^="#"]');
+            
+            anchorLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // Foca no elemento para acessibilidade
+                        setTimeout(() => {
+                            targetElement.tabIndex = -1;
+                            targetElement.focus();
+                        }, 500);
+                    }
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>

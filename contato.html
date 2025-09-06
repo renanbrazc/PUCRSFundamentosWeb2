@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Contato - MiniMercado Bom Preço</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Entre em contato conosco: telefone, e-mail, endereço e formulário de contato do MiniMercado Bom Preço.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+</head>
+<body>
+    <!-- Skip link para acessibilidade -->
+    <a href="#main" class="skip-link visually-hidden-focusable">Pular para conteúdo principal</a>
+    
+    <!-- Cabeçalho -->
+    <header role="banner">
+        <div class="container">
+            <h1>MiniMercado Bom Preço</h1>
+            
+            <!-- Navegação principal -->
+            <nav role="navigation" aria-label="Menu principal">
+                <a href="index.html">Início</a> | 
+                <a href="produtos.html">Produtos</a> | 
+                <a href="servicos.html">Serviços</a> | 
+                <a href="sobre.html">Sobre</a> | 
+                <a href="contato.html" aria-current="page">Contato</a> | 
+                <a href="ajuda.html">Ajuda</a>
+            </nav>
+            
+            <!-- Botão de acessibilidade -->
+            <div class="accessibility-controls">
+                <button type="button" id="contrastToggle" class="btn btn-outline-light btn-sm" 
+                        aria-pressed="false" title="Alterna modo alto contraste">
+                    Ativar Alto Contraste
+                </button>
+            </div>
+        </div>
+        <hr>
+    </header>
+    
+    <!-- Conteúdo principal -->
+    <main id="main" role="main">
+        <div class="container">
+            
+            <!-- Relógio e status da loja -->
+            <section class="clock-section" aria-label="Horário atual e status da loja">
+                <div class="clock-container">
+                    <div id="clock" aria-live="polite" aria-label="Horário atual">
+                        <!-- Preenchido via JavaScript -->
+                    </div>
+                    <div id="storeStatus" aria-live="polite">
+                        <!-- Status da loja preenchido via JavaScript -->
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Seção de contato -->
+            <section class="contato-section" aria-label="Informações de contato">
+                <div class="row">
+                    
+                    <!-- Informações de contato -->
+                    <div class="col-lg-6 mb-4">
+                        <h2>Entre em Contato</h2>
+                        
+                        <div class="contact-info">
+                            
+                            <!-- Telefone -->
+                            <div class="contact-item mb-4">
+                                <div class="card border-success">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="contact-icon me-3">
+                                                <i class="fas fa-phone fa-2x text-success" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="contact-details">
+                                                <h4 class="card-title mb-1">Telefone</h4>
+                                                <p class="card-text mb-0">
+                                                    <a href="tel:+551133330000" 
+                                                       class="text-decoration-none"
+                                                       aria-label="Ligar para (11) 3333-0000">
+                                                        (11) 3333-0000
+                                                    </a>
+                                                </p>
+                                                <small class="text-muted">Segunda a Sábado, 8h às 20h</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- E-mail -->
+                            <div class="contact-item mb-4">
+                                <div class="card border-primary">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="contact-icon me-3">
+                                                <i class="fas fa-envelope fa-2x text-primary" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="contact-details">
+                                                <h4 class="card-title mb-1">E-mail</h4>
+                                                <p class="card-text mb-0">
+                                                    <a href="mailto:contato@minimercadobompreco.com.br" 
+                                                       class="text-decoration-none"
+                                                       aria-label="Enviar e-mail para contato@minimercadobompreco.com.br">
+                                                        contato@minimercadobompreco.com.br
+                                                    </a>
+                                                </p>
+                                                <small class="text-muted">Respondemos em até 24 horas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Endereço -->
+                            <div class="contact-item mb-4">
+                                <div class="card border-warning">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="contact-icon me-3">
+                                                <i class="fas fa-map-marker-alt fa-2x text-warning" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="contact-details">
+                                                <h4 class="card-title mb-1">Endereço</h4>
+                                                <address class="mb-0">
+                                                    Rua Exemplo, 123<br>
+                                                    São Paulo - SP<br>
+                                                    CEP: 01234-567
+                                                </address>
+                                                <small class="text-muted">Próximo à Estação Metro</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- WhatsApp -->
+                            <div class="contact-item mb-4">
+                                <div class="card border-info">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="contact-icon me-3">
+                                                <i class="fab fa-whatsapp fa-2x text-info" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="contact-details">
+                                                <h4 class="card-title mb-1">WhatsApp</h4>
+                                                <p class="card-text mb-0">
+                                                    <a href="https://wa.me/5511933330000" 
+                                                       target="_blank" 
+                                                       rel="noopener noreferrer"
+                                                       class="text-decoration-none"
+                                                       aria-label="Enviar mensagem pelo WhatsApp">
+                                                        (11) 9 3333-0000
+                                                    </a>
+                                                </p>
+                                                <small class="text-muted">Atendimento rápido e direto</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Formulário de contato -->
+                    <div class="col-lg-6">
+                        <h2>Envie uma Mensagem</h2>
+                        
+                        <form id="contatoForm" class="form-container" novalidate>
+                            <fieldset>
+                                <legend class="visually-hidden">Formulário de contato</legend>
+                                
+                                <!-- Nome -->
+                                <div class="form-group mb-3">
+                                    <label for="nomeContato" class="form-label">
+                                        Nome <span class="text-danger" aria-label="obrigatório">*</span>
+                                    </label>
+                                    <input type="text" id="nomeContato" name="nomeContato" 
+                                           class="form-control" required 
+                                           placeholder="Seu nome completo"
+                                           aria-describedby="nomeContato-help">
+                                    <div id="nomeContato-help" class="form-text">
+                                        Como devemos te chamar?
+                                    </div>
+                                </div>
+                                
+                                <!-- E-mail -->
+                                <div class="form-group mb-3">
+                                    <label for="emailContato" class="form-label">
+                                        E-mail <span class="text-danger" aria-label="obrigatório">*</span>
+                                    </label>
+                                    <input type="email" id="emailContato" name="emailContato" 
+                                           class="form-control" required 
+                                           placeholder="seu@email.com"
+                                           aria-describedby="emailContato-help">
+                                    <div id="emailContato-help" class="form-text">
+                                        Para enviarmos nossa resposta
+                                    </div>
+                                </div>
+                                
+                                <!-- Telefone -->
+                                <div class="form-group mb-3">
+                                    <label for="telefoneContato" class="form-label">
+                                        Telefone
+                                    </label>
+                                    <input type="tel" id="telefoneContato" name="telefoneContato" 
+                                           class="form-control" 
+                                           placeholder="(11) 99999-9999"
+                                           aria-describedby="telefoneContato-help">
+                                    <div id="telefoneContato-help" class="form-text">
+                                        Opcional - para contato mais rápido
+                                    </div>
+                                </div>
+                                
+                                <!-- Assunto -->
+                                <div class="form-group mb-3">
+                                    <label for="assunto" class="form-label">
+                                        Assunto <span class="text-danger" aria-label="obrigatório">*</span>
+                                    </label>
+                                    <select id="assunto" name="assunto" class="form-control" required>
+                                        <option value="">Selecione um assunto</option>
+                                        <option value="duvida">Dúvida sobre produtos</option>
+                                        <option value="pedido">Pedido/Agendamento</option>
+                                        <option value="entrega">Problema com entrega</option>
+                                        <option value="sugestao">Sugestão</option>
+                                        <option value="reclamacao">Reclamação</option>
+                                        <option value="elogio">Elogio</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                </div>
+                                
+                                <!-- Mensagem -->
+                                <div class="form-group mb-4">
+                                    <label for="mensagem" class="form-label">
+                                        Mensagem <span class="text-danger" aria-label="obrigatório">*</span>
+                                    </label>
+                                    <textarea id="mensagem" name="mensagem" 
+                                              class="form-control" rows="5" required
+                                              placeholder="Digite sua mensagem aqui..."
+                                              maxlength="1000"
+                                              aria-describedby="mensagem-help"></textarea>
+                                    <div id="mensagem-help" class="form-text">
+                                        Máximo 1000 caracteres. <span id="charCount">0/1000</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Checkbox de cópia -->
+                                <div class="form-group mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" 
+                                               id="copiaEmail" name="copiaEmail">
+                                        <label class="form-check-label" for="copiaEmail">
+                                            Receber uma cópia da mensagem no meu e-mail
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <!-- Botões -->
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary me-2">
+                                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                        Enviar Mensagem
+                                    </button>
+                                    <button type="reset" class="btn btn-secondary">
+                                        <i class="fas fa-undo" aria-hidden="true"></i>
+                                        Limpar Formulário
+                                    </button>
+                                </div>
+                                
+                            </fieldset>
+                        </form>
+                    </div>
+                    
+                </div>
+                
+                <!-- Mapa da localização (placeholder) -->
+                <div class="location-map mt-5">
+                    <h3>Nossa Localização</h3>
+                    <div class="map-placeholder bg-light border rounded p-5 text-center">
+                        <i class="fas fa-map fa-3x text-muted mb-3" aria-hidden="true"></i>
+                        <h4 class="text-muted">Mapa da Localização</h4>
+                        <p class="text-muted mb-3">
+                            Estamos localizados na Rua Exemplo, 123 - São Paulo/SP
+                        </p>
+                        <div class="map-directions">
+                            <h5>Como Chegar:</h5>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-subway text-primary" aria-hidden="true"></i> Estação Metro: 5 minutos a pé</li>
+                                <li><i class="fas fa-bus text-success" aria-hidden="true"></i> Ponto de ônibus: 2 minutos a pé</li>
+                                <li><i class="fas fa-car text-warning" aria-hidden="true"></i> Estacionamento gratuito na rua</li>
+                                <li><i class="fas fa-wheelchair text-info" aria-hidden="true"></i> Acesso facilitado para cadeirantes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ rápido -->
+                <div class="faq-section mt-5">
+                    <h3>Perguntas Frequentes</h3>
+                    <div class="accordion" id="faqAccordion">
+                        
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="faq1">
+                                <button class="accordion-button collapsed" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#collapse1" 
+                                        aria-expanded="false" aria-controls="collapse1">
+                                    Qual o horário de funcionamento?
+                                </button>
+                            </h4>
+                            <div id="collapse1" class="accordion-collapse collapse" 
+                                 aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Funcionamos de segunda a sábado, das 8h às 20h. 
+                                    Aos domingos permanecemos fechados para descanso da equipe.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="faq2">
+                                <button class="accordion-button collapsed" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#collapse2" 
+                                        aria-expanded="false" aria-controls="collapse2">
+                                    Fazem entrega?
+                                </button>
+                            </h4>
+                            <div id="collapse2" class="accordion-collapse collapse" 
+                                 aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim! Fazemos tele-entrega por R$ 7,00 para todo o bairro. 
+                                    O pedido mínimo é de R$ 20,00 e entregamos no mesmo dia.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="faq3">
+                                <button class="accordion-button collapsed" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#collapse3" 
+                                        aria-expanded="false" aria-controls="collapse3">
+                                    Quais formas de pagamento aceitam?
+                                </button>
+                            </h4>
+                            <div id="collapse3" class="accordion-collapse collapse" 
+                                 aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Aceitamos dinheiro, cartão de débito, cartão de crédito 
+                                    (à vista e parcelado) e PIX. Para entregas, o pagamento 
+                                    pode ser feito na hora da entrega.
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </section>
+            
+        </div>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer role="contentinfo">
+        <div class="container">
+            <hr>
+            <p>&copy; 2025 MiniMercado Bom Preço &mdash; Todos os direitos reservados.</p>
+            <p>
+                Contato: 
+                <a href="mailto:contato@minimercadobompreco.com.br" 
+                   aria-label="Enviar e-mail para contato@minimercadobompreco.com.br">
+                    contato@minimercadobompreco.com.br
+                </a> &mdash; 
+                Tel: <a href="tel:+551133330000" aria-label="Ligar para (11) 3333-0000">(11) 3333-0000</a>
+            </p>
+            
+            <!-- Navegação do rodapé -->
+            <nav role="navigation" aria-label="Menu do rodapé">
+                <a href="index.html">Início</a> | 
+                <a href="produtos.html">Produtos</a> | 
+                <a href="servicos.html">Serviços</a> | 
+                <a href="sobre.html">Sobre</a> | 
+                <a href="contato.html">Contato</a> | 
+                <a href="ajuda.html">Ajuda</a>
+            </nav>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Font Awesome para ícones -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    
+    <!-- JavaScript customizado -->
+    <script src="assets/js/script.js"></script>
+    
+    <!-- JavaScript específico do formulário de contato -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Contador de caracteres para textarea
+            const mensagemTextarea = document.getElementById('mensagem');
+            const charCount = document.getElementById('charCount');
+            
+            if (mensagemTextarea && charCount) {
+                mensagemTextarea.addEventListener('input', function() {
+                    const currentLength = this.value.length;
+                    const maxLength = this.getAttribute('maxlength');
+                    charCount.textContent = `${currentLength}/${maxLength}`;
+                    
+                    // Muda cor quando próximo do limite
+                    if (currentLength > maxLength * 0.8) {
+                        charCount.className = 'text-warning';
+                    } else if (currentLength === parseInt(maxLength)) {
+                        charCount.className = 'text-danger';
+                    } else {
+                        charCount.className = '';
+                    }
+                });
+            }
+            
+            // Validação específica do formulário de contato
+            const contatoForm = document.getElementById('contatoForm');
+            if (contatoForm) {
+                contatoForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Validação adicional específica
+                    const assunto = document.getElementById('assunto').value;
+                    const mensagem = document.getElementById('mensagem').value;
+                    
+                    if (!assunto) {
+                        document.getElementById('assunto').focus();
+                        showError('Por favor, selecione um assunto.');
+                        return;
+                    }
+                    
+                    if (mensagem.length < 10) {
+                        document.getElementById('mensagem').focus();
+                        showError('A mensagem deve ter pelo menos 10 caracteres.');
+                        return;
+                    }
+                    
+                    // Se chegou até aqui, o formulário é válido
+                    showSuccess('Mensagem enviada com sucesso! Responderemos em breve.');
+                    
+                    // Simula envio
+                    setTimeout(() => {
+                        contatoForm.reset();
+                        charCount.textContent = '0/1000';
+                        charCount.className = '';
+                    }, 1000);
+                });
+            }
+            
+        });
+    </script>
+    
+</body>
+</html>

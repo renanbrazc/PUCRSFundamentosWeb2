@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Sobre - MiniMercado Bom Preço</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Conheça a história do MiniMercado Bom Preço: qualidade, preço justo e atendimento humano no seu bairro.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+</head>
+<body>
+    <!-- Skip link para acessibilidade -->
+    <a href="#main" class="skip-link visually-hidden-focusable">Pular para conteúdo principal</a>
+    
+    <!-- Cabeçalho -->
+    <header role="banner">
+        <div class="container">
+            <h1>MiniMercado Bom Preço</h1>
+            
+            <!-- Navegação principal -->
+            <nav role="navigation" aria-label="Menu principal">
+                <a href="index.html">Início</a> | 
+                <a href="produtos.html">Produtos</a> | 
+                <a href="servicos.html">Serviços</a> | 
+                <a href="sobre.html" aria-current="page">Sobre</a> | 
+                <a href="contato.html">Contato</a> | 
+                <a href="ajuda.html">Ajuda</a>
+            </nav>
+            
+            <!-- Botão de acessibilidade -->
+            <div class="accessibility-controls">
+                <button type="button" id="contrastToggle" class="btn btn-outline-light btn-sm" 
+                        aria-pressed="false" title="Alterna modo alto contraste">
+                    Ativar Alto Contraste
+                </button>
+            </div>
+        </div>
+        <hr>
+    </header>
+    
+    <!-- Conteúdo principal -->
+    <main id="main" role="main">
+        <div class="container">
+            
+            <!-- Relógio e status da loja -->
+            <section class="clock-section" aria-label="Horário atual e status da loja">
+                <div class="clock-container">
+                    <div id="clock" aria-live="polite" aria-label="Horário atual">
+                        <!-- Preenchido via JavaScript -->
+                    </div>
+                    <div id="storeStatus" aria-live="polite">
+                        <!-- Status da loja preenchido via JavaScript -->
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Seção sobre nós -->
+            <section class="sobre-section" aria-label="Sobre o MiniMercado Bom Preço">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2>Sobre o MiniMercado Bom Preço</h2>
+                        
+                        <div class="story-content">
+                            <p class="lead">
+                                O MiniMercado Bom Preço é um minimercado de bairro focado em 
+                                <strong>qualidade</strong>, <strong>preço justo</strong> e 
+                                <strong>atendimento humano</strong>.
+                            </p>
+                            
+                            <h3>Nossa História</h3>
+                            <p>
+                                Fundado em 2020, o MiniMercado Bom Preço nasceu da necessidade de oferecer 
+                                aos moradores do bairro uma opção de compras próxima, confiável e com preços 
+                                acessíveis. Nossa família sempre acreditou que um bom atendimento e produtos 
+                                de qualidade fazem toda a diferença no dia a dia das pessoas.
+                            </p>
+                            
+                            <h3>Nossa Missão</h3>
+                            <div class="mission-box bg-light p-4 rounded">
+                                <blockquote class="blockquote mb-0">
+                                    <p>
+                                        "Ser o minimercado de referência no bairro, oferecendo produtos 
+                                        frescos e de qualidade com preços justos, sempre com um atendimento 
+                                        humano e personalizado que faça nossos clientes se sentirem em casa."
+                                    </p>
+                                </blockquote>
+                            </div>
+                            
+                            <h3>Nossos Valores</h3>
+                            <div class="row mt-4">
+                                <div class="col-md-6 mb-3">
+                                    <div class="value-card h-100">
+                                        <div class="card border-success">
+                                            <div class="card-body text-center">
+                                                <i class="fas fa-heart fa-2x text-success mb-3" aria-hidden="true"></i>
+                                                <h4 class="card-title">Atendimento Humano</h4>
+                                                <p class="card-text">
+                                                    Tratamos cada cliente como parte da nossa família, 
+                                                    com carinho e atenção personalizada.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-3">
+                                    <div class="value-card h-100">
+                                        <div class="card border-primary">
+                                            <div class="card-body text-center">
+                                                <i class="fas fa-star fa-2x text-primary mb-3" aria-hidden="true"></i>
+                                                <h4 class="card-title">Qualidade</h4>
+                                                <p class="card-text">
+                                                    Selecionamos cuidadosamente nossos fornecedores para 
+                                                    garantir produtos sempre frescos e de alta qualidade.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-3">
+                                    <div class="value-card h-100">
+                                        <div class="card border-warning">
+                                            <div class="card-body text-center">
+                                                <i class="fas fa-dollar-sign fa-2x text-warning mb-3" aria-hidden="true"></i>
+                                                <h4 class="card-title">Preço Justo</h4>
+                                                <p class="card-text">
+                                                    Acreditamos que produtos de qualidade devem ser 
+                                                    acessíveis a todas as famílias do bairro.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-3">
+                                    <div class="value-card h-100">
+                                        <div class="card border-info">
+                                            <div class="card-body text-center">
+                                                <i class="fas fa-users fa-2x text-info mb-3" aria-hidden="true"></i>
+                                                <h4 class="card-title">Comunidade</h4>
+                                                <p class="card-text">
+                                                    Somos parte ativa da comunidade local, apoiando 
+                                                    iniciativas e eventos do nosso bairro.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sidebar com informações -->
+                    <div class="col-lg-4">
+                        <aside class="info-sidebar">
+                            
+                            <!-- Horário de funcionamento -->
+                            <div class="card mb-4">
+                                <div class="card-header bg-success text-white">
+                                    <h3 class="card-title mb-0">
+                                        <i class="fas fa-clock" aria-hidden="true"></i>
+                                        Horário de Funcionamento
+                                    </h3>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2">
+                                            <strong>Segunda a Sábado:</strong><br>
+                                            8h às 20h
+                                        </li>
+                                        <li>
+                                            <strong>Domingos:</strong><br>
+                                            <span class="text-danger">Fechado</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Localização -->
+                            <div class="card mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    <h3 class="card-title mb-0">
+                                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                        Localização
+                                    </h3>
+                                </div>
+                                <div class="card-body">
+                                    <address>
+                                        <strong>MiniMercado Bom Preço</strong><br>
+                                        Rua Exemplo, 123<br>
+                                        São Paulo - SP<br>
+                                        CEP: 01234-567
+                                    </address>
+                                    <p class="mb-0">
+                                        <small class="text-muted">
+                                            Próximo à Estação Metro e ao Posto de Saúde
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Estatísticas -->
+                            <div class="card">
+                                <div class="card-header bg-info text-white">
+                                    <h3 class="card-title mb-0">
+                                        <i class="fas fa-chart-bar" aria-hidden="true"></i>
+                                        Nossos Números
+                                    </h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row text-center">
+                                        <div class="col-6 mb-3">
+                                            <div class="stat-number text-success">
+                                                <strong>500+</strong>
+                                            </div>
+                                            <small>Clientes Ativos</small>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="stat-number text-primary">
+                                                <strong>5</strong>
+                                            </div>
+                                            <small>Anos de Experiência</small>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="stat-number text-warning">
+                                                <strong>200+</strong>
+                                            </div>
+                                            <small>Produtos Disponíveis</small>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="stat-number text-info">
+                                                <strong>98%</strong>
+                                            </div>
+                                            <small>Satisfação do Cliente</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </aside>
+                    </div>
+                </div>
+                
+                <!-- Depoimentos de clientes -->
+                <div class="testimonials-section mt-5">
+                    <h3>O que nossos clientes dizem</h3>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <blockquote class="blockquote">
+                                        <p class="mb-3">
+                                            "Sempre encontro produtos frescos e o atendimento é 
+                                            excepcional. Virou minha primeira opção para compras rápidas!"
+                                        </p>
+                                    </blockquote>
+                                    <footer class="blockquote-footer">
+                                        Maria Silva, <cite title="Cliente há 3 anos">Cliente há 3 anos</cite>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <blockquote class="blockquote">
+                                        <p class="mb-3">
+                                            "A entrega é super rápida e os preços são justos. 
+                                            Recomendo para todos os vizinhos!"
+                                        </p>
+                                    </blockquote>
+                                    <footer class="blockquote-footer">
+                                        João Santos, <cite title="Cliente há 2 anos">Cliente há 2 anos</cite>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <blockquote class="blockquote">
+                                        <p class="mb-3">
+                                            "Sou cliente desde a inauguração e sempre fui bem atendida. 
+                                            É como fazer compras com a família!"
+                                        </p>
+                                    </blockquote>
+                                    <footer class="blockquote-footer">
+                                        Ana Costa, <cite title="Cliente há 5 anos">Cliente há 5 anos</cite>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+        </div>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer role="contentinfo">
+        <div class="container">
+            <hr>
+            <p>&copy; 2025 MiniMercado Bom Preço &mdash; Todos os direitos reservados.</p>
+            <p>
+                Contato: 
+                <a href="mailto:contato@minimercadobompreco.com.br" 
+                   aria-label="Enviar e-mail para contato@minimercadobompreco.com.br">
+                    contato@minimercadobompreco.com.br
+                </a> &mdash; 
+                Tel: <a href="tel:+551133330000" aria-label="Ligar para (11) 3333-0000">(11) 3333-0000</a>
+            </p>
+            
+            <!-- Navegação do rodapé -->
+            <nav role="navigation" aria-label="Menu do rodapé">
+                <a href="index.html">Início</a> | 
+                <a href="produtos.html">Produtos</a> | 
+                <a href="servicos.html">Serviços</a> | 
+                <a href="sobre.html">Sobre</a> | 
+                <a href="contato.html">Contato</a> | 
+                <a href="ajuda.html">Ajuda</a>
+            </nav>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Font Awesome para ícones -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    
+    <!-- JavaScript customizado -->
+    <script src="assets/js/script.js"></script>
+    
+    <!-- Animações específicas da página -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Contador animado para estatísticas
+            const counters = document.querySelectorAll('.stat-number strong');
+            
+            const animateCounter = (counter) => {
+                const target = parseInt(counter.textContent.replace(/\D/g, ''));
+                const suffix = counter.textContent.replace(/\d/g, '');
+                let current = 0;
+                const increment = target / 50;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target + suffix;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current) + suffix;
+                    }
+                }, 50);
+            };
+            
+            // Observer para iniciar animação quando visível
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target.querySelector('strong');
+                        if (counter && !counter.dataset.animated) {
+                            counter.dataset.animated = 'true';
+                            animateCounter(counter);
+                        }
+                    }
+                });
+            });
+            
+            // Observar os contadores
+            const statNumbers = document.querySelectorAll('.stat-number');
+            statNumbers.forEach(stat => observer.observe(stat));
+        });
+    </script>
+    
+</body>
+</html>

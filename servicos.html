@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Serviços - MiniMercado Bom Preço</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Conheça nossos serviços: retirada no local sem custo e tele-entrega por apenas R$ 7,00 no bairro.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+</head>
+<body>
+    <!-- Skip link para acessibilidade -->
+    <a href="#main" class="skip-link visually-hidden-focusable">Pular para conteúdo principal</a>
+    
+    <!-- Cabeçalho -->
+    <header role="banner">
+        <div class="container">
+            <h1>MiniMercado Bom Preço</h1>
+            
+            <!-- Navegação principal -->
+            <nav role="navigation" aria-label="Menu principal">
+                <a href="index.html">Início</a> | 
+                <a href="produtos.html">Produtos</a> | 
+                <a href="servicos.html" aria-current="page">Serviços</a> | 
+                <a href="sobre.html">Sobre</a> | 
+                <a href="contato.html">Contato</a> | 
+                <a href="ajuda.html">Ajuda</a>
+            </nav>
+            
+            <!-- Botão de acessibilidade -->
+            <div class="accessibility-controls">
+                <button type="button" id="contrastToggle" class="btn btn-outline-light btn-sm" 
+                        aria-pressed="false" title="Alterna modo alto contraste">
+                    Ativar Alto Contraste
+                </button>
+            </div>
+        </div>
+        <hr>
+    </header>
+    
+    <!-- Conteúdo principal -->
+    <main id="main" role="main">
+        <div class="container">
+            
+            <!-- Relógio e status da loja -->
+            <section class="clock-section" aria-label="Horário atual e status da loja">
+                <div class="clock-container">
+                    <div id="clock" aria-live="polite" aria-label="Horário atual">
+                        <!-- Preenchido via JavaScript -->
+                    </div>
+                    <div id="storeStatus" aria-live="polite">
+                        <!-- Status da loja preenchido via JavaScript -->
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Seção de serviços -->
+            <section class="servicos-section" aria-label="Nossos serviços disponíveis">
+                <h2>Serviços</h2>
+                
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header bg-success text-white">
+                                <h3 class="card-title mb-0">
+                                    <i class="fas fa-store" aria-hidden="true"></i>
+                                    Retirada no Local
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="text-success">Sem custo adicional</h4>
+                                <p class="card-text">
+                                    Cliente retira suas compras diretamente no minimercado. 
+                                    Ideal para quem mora próximo ou está passando pela região.
+                                </p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Sem taxa de entrega</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Produtos sempre frescos</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Atendimento personalizado</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Horário: Segunda a Sábado, 8h às 20h</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="index.html#agendamento" class="btn btn-success w-100" 
+                                   aria-label="Agendar retirada no local">
+                                    Agendar Retirada
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header bg-primary text-white">
+                                <h3 class="card-title mb-0">
+                                    <i class="fas fa-truck" aria-hidden="true"></i>
+                                    Tele-entrega
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="text-primary">R$ 7,00 (apenas no bairro)</h4>
+                                <p class="card-text">
+                                    Entrega em domicílio na região do bairro no mesmo dia. 
+                                    Comodidade e praticidade para você.
+                                </p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-primary" aria-hidden="true"></i> Entrega rápida no mesmo dia</li>
+                                    <li><i class="fas fa-check text-primary" aria-hidden="true"></i> Cobertura em todo o bairro</li>
+                                    <li><i class="fas fa-check text-primary" aria-hidden="true"></i> Produtos bem acondicionados</li>
+                                    <li><i class="fas fa-check text-primary" aria-hidden="true"></i> Horário: Segunda a Sábado, 8h às 19h</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="index.html#agendamento" class="btn btn-primary w-100" 
+                                   aria-label="Agendar tele-entrega">
+                                    Agendar Entrega
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Informações adicionais -->
+                <div class="alert alert-info mt-4" role="region" aria-labelledby="info-title">
+                    <h4 id="info-title" class="alert-heading">
+                        <i class="fas fa-info-circle" aria-hidden="true"></i>
+                        Informações Importantes
+                    </h4>
+                    <ul class="mb-0">
+                        <li><strong>Pedido mínimo para entrega:</strong> R$ 20,00</li>
+                        <li><strong>Formas de pagamento:</strong> Dinheiro, cartão de débito/crédito e PIX</li>
+                        <li><strong>Agendamento:</strong> Com até 1 dia de antecedência</li>
+                        <li><strong>Cancelamento:</strong> Até 2 horas antes do horário agendado</li>
+                        <li><strong>Área de cobertura:</strong> Raio de 2km do minimercado</li>
+                    </ul>
+                </div>
+                
+                <!-- Mapa de cobertura (simulado) -->
+                <div class="coverage-map mt-4">
+                    <h3>Área de Cobertura da Entrega</h3>
+                    <div class="map-placeholder bg-light border rounded p-4 text-center">
+                        <i class="fas fa-map-marked-alt fa-3x text-muted mb-3" aria-hidden="true"></i>
+                        <p class="text-muted">
+                            Mapa da área de cobertura da tele-entrega<br>
+                            <small>Raio de 2km a partir do MiniMercado Bom Preço</small>
+                        </p>
+                        <p class="mb-0">
+                            <strong>Endereço:</strong> Rua Exemplo, 123 — São Paulo/SP
+                        </p>
+                    </div>
+                </div>
+                
+            </section>
+            
+        </div>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer role="contentinfo">
+        <div class="container">
+            <hr>
+            <p>&copy; 2025 MiniMercado Bom Preço &mdash; Todos os direitos reservados.</p>
+            <p>
+                Contato: 
+                <a href="mailto:contato@minimercadobompreco.com.br" 
+                   aria-label="Enviar e-mail para contato@minimercadobompreco.com.br">
+                    contato@minimercadobompreco.com.br
+                </a> &mdash; 
+                Tel: <a href="tel:+551133330000" aria-label="Ligar para (11) 3333-0000">(11) 3333-0000</a>
+            </p>
+            
+            <!-- Navegação do rodapé -->
+            <nav role="navigation" aria-label="Menu do rodapé">
+                <a href="index.html">Início</a> | 
+                <a href="produtos.html">Produtos</a> | 
+                <a href="servicos.html">Serviços</a> | 
+                <a href="sobre.html">Sobre</a> | 
+                <a href="contato.html">Contato</a> | 
+                <a href="ajuda.html">Ajuda</a>
+            </nav>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Font Awesome para ícones -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    
+    <!-- JavaScript customizado -->
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>
