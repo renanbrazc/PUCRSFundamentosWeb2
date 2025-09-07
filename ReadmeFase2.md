@@ -138,12 +138,12 @@ minimercado-bom-preco/
 ├── sobre.html                 # Página sobre
 ├── contato.html               # Página de contato
 ├── ajuda.html                 # Página de ajuda
-└── README_FASE2.md           # Esta documentação
+└── README_FASE2.md            # Esta documentação
 ```
 
 ---
 
-## ⚡ Funcionalidades JavaScript
+## Funcionalidades JavaScript
 
 ### **1. Carrossel Dinâmico:**
 ```javascript
@@ -158,7 +158,7 @@ minimercado-bom-preco/
 // Atualização a cada segundo
 // Data e hora formatadas em português
 // Status da loja baseado no horário
-// Indicação visual (🟢 Aberto / 🔴 Fechado)
+// Indicação visual ( Aberto /  Fechado)
 ```
 
 ### **3. Validação de Formulários:**
